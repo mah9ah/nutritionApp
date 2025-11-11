@@ -1,0 +1,15 @@
+# Ignore SQL database dump files
+nutritionApp.sql
+Db_security.sql
+*.sql
+
+# Ignore system and environment files
+.DS_Store
+.env
+
+# Ignore temporary files
+*.log
+*.tmp
+
+# Ignore VS Code settings (optional)
+.vscode/
