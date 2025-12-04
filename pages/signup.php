@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']);
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
-
+//yaqoob is testing github, please delete eventually 
     // Validation
     if (empty($username) || empty($password)) {
         $error = 'Please fill in all required fields';
