@@ -1,0 +1,25 @@
+<?php
+// session.php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+function isLoggedIn() {
+    return isset($_SESSION['user_id']);
+}
+
+function requireLogin() {
+    if (!isLoggedIn()) {
+        header("Location: ../index.php");
+        exit();
+    }
+}
+
+function getUserId() {
+    return $_SESSION['user_id'] ?? null;
+}
+
+function getUsername() {
+    return $_SESSION['username'] ?? 'Guest';
+}
+?>

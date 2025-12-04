@@ -1,5 +1,15 @@
-    # Ignore macOS-specific files
-    .DS_Store
+# Ignore SQL database dump files
+nutritionApp.sql
+Db_security.sql
+*.sql
 
-    # Ignore SQL files
-    *.sql
+# Ignore system and environment files
+.DS_Store
+.env
+
+# Ignore temporary files
+*.log
+*.tmp
+
+# Ignore VS Code settings (optional)
+.vscode/
